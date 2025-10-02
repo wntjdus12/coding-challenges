@@ -1,4 +1,5 @@
-#최댓값 구하기
+#최댓값 구하기 
+# Q. 다음과 같이 숫자로 이루어진 배열이 있을 때, 이 배열 내에서 가장 큰 수를 반환하시오.
 def find_max_num(array):
     for number in array:
         is_max_num = True

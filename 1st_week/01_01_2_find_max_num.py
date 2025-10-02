@@ -1,4 +1,5 @@
-#최댓값 구하기
+# 최댓값 구하기
+# 더 좋은 방법
 def find_max_num(array):
     max_number = array[0]
 
