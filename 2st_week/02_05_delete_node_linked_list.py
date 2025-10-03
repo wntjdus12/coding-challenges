@@ -1,3 +1,6 @@
+# 링크드 리스트 원소 삭제
+# Q.  링크드 리스트에서 index번째 원소를 제거하시오.
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -40,6 +43,7 @@ class LinkedList:
         node.next = new_node
         new_node.next = next_node
 
+    # 링크드 리스트 원소 삭제
     def delete_node(self, index):
         if index == 0:
             self.head = self.head.next

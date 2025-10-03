@@ -1,3 +1,6 @@
+# 링크드 리스트 원소 추가
+# Q.  링크드 리스트에서 index번째 원소를 추가하시오
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -28,6 +31,7 @@ class LinkedList:
             count += 1
         return node
 
+    # 링크드 리스트 원소 추가
     def add_node(self, index, value):
         new_node = Node(value)
 
@@ -38,10 +42,6 @@ class LinkedList:
                                       # head 
             self.head = new_node      # [7] -> [5]
             return
-            
-
-
-
 
         # index - 1 번째의 노드가 필요하다.
         prev_node = self.get_node(index - 1)

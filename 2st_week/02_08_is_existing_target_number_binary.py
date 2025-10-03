@@ -10,16 +10,14 @@ def is_existing_target_number_binary(target, array):
     current_guess = (current_min + current_max) // 2  #탐색값
 
     while current_min <= current_max:
-        if array[current_guess] == target:
+        if array[current_guess] == target: # 정답!
             return True
-        elif array[current_guess] < target:
+        elif array[current_guess] < target: #UP!
             current_min = current_guess + 1
-        else: #array[current_guess] > target:
-            current_max = current_guess - 1
+        else: #array[current_guess] > target:   #DOWN~
+            current_max = current_guess - 1 
 
         current_guess = (current_min + current_max) // 2
-
-
 
     return False
 

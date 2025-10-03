@@ -1,3 +1,6 @@
+# 링크드 리스트 원소 찾기
+# Q.  링크드 리스트에서 index번째 원소를 반환하시오.
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -19,7 +22,8 @@ class LinkedList:
         while cur is not None:
             print(cur.data)
             cur = cur.next
-
+            
+    # 링크드 리스트 원소 찾기
     def get_node(self, index):
         cur = self.head 
         cur_index = 0

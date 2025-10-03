@@ -6,7 +6,7 @@ def get_count_of_ways_to_target_by_doing_plus_or_minus(array, target):
     all_ways = []
 
     def get_all_ways_by_doing_plus_or_minus(array, current_index, current_sum):
-        if current_index == len(array): # 5까지 도달했을때 
+        if current_index == len(array): # 5까지 도달했을때 # 탈출조건
             all_ways.append(current_sum) # 여기에 삽입 
             return
         print("current is ", current_index, current_sum) # 3번째로 출력
