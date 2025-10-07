@@ -36,9 +36,9 @@ def selection_sort(array):
     for i in range(n - 1):
         min_index = i # i = 0
         for j in range(n - i): # j = 0..4
-            if array[i + j] < array[min_index]:
+            if array[i + j] < array[min_index]: # 만약 i+j가 현재 값보다 작다면 현재인덱스에 i+j 인덱스번호를 넣어라 
                 min_index = i + j 
-            array[i], array[min_index] = array[min_index], array[i]
+            array[i], array[min_index] = array[min_index], array[i] # 그러고나서 현재값에 작은인덱스값을 넣어라 (서로 바꿔라)
     return array
 
 

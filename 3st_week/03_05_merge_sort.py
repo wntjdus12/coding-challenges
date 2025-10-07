@@ -16,7 +16,7 @@
 array = [5, 3, 2, 1, 6, 8, 7, 4]
 
 def merge_sort(array):
-    if len(array) <= 1: # 탈출 조건 : 만약 배열의 길이가 1보다 같거나 작다면 그냥 배열 반환해라
+    if len(array) <= 1: # 탈출 조건(재귀함수는 탈출조건 필수) : 만약 배열의 길이가 1보다 같거나 작다면 그냥 배열 반환해라
         return array
 
     mid = (0 + len(array)) // 2

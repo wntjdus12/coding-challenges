@@ -1,4 +1,4 @@
-# 스택 
+# 스택 -> 빨래통
 # 1. 한 곳에서만 자료를 넣고 뺄 수 있다.
 # 2. LIFO -> Last in first out. 가장 마지막에 넣은게 제일 빨리 나온다.
 
@@ -40,7 +40,7 @@ class Stack:
         self.head = new_head # [3] 이라는 노드를 head로 만들어줘
         return
 
-    # pop 기능 구현
+    # pop 기능 구현 - pop은 반환해준다 
     def pop(self):
         if self.is_empty():
             print("stack is Empty") 

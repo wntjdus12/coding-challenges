@@ -7,7 +7,7 @@ class LinkedTuple:
         self.items = []
 
     def add(self, key, value):
-        self.items.append(key, value) # ["333", 7] -> ["77", 6]
+        self.items.append((key, value)) # ["333", 7] -> ["77", 6]
 
     def get(self, key): # 링크드 리스트에서 key값을 통해 해당하는 value 찾는 과정 
         for k, v in self.items:
@@ -41,7 +41,7 @@ class LinkedDict:
         index = hash(key) % len(self.items)
         return self.items[index].get(key) # LinkedTuple [(key, value), (key2, value2)]
 
-my_dict = Dict()
+my_dict = LinkedDict()
 my_dict.put("test", 3)
 my_dict.put("333", 7)
 my_dict.put("77", 6)

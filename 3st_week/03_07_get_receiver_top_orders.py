@@ -33,7 +33,7 @@ def get_receiver_top_orders(heights):
     for i in range(len(heights) - 1 , 0, -1):
         for j in range(i - 1, -1, -1):
             if heights[i] <= heights[j]:
-                answer[i] = j + 1 
+                answer[i] = j + 1 #인덱스니까 +1 더해줘야 순번이 된다. 
                 break
     return answer
 
